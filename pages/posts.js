@@ -17,7 +17,6 @@ export default function Users({posts}) {
 export const getServerSideProps = async () => {
     try {
         const posts = await fetch(`${process.env.GET_POSTS}`)
-        console.log(posts);
         const jsonData = await posts.json()
         return{ props: { posts : jsonData } }
     } catch (error) {
