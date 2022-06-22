@@ -6,7 +6,7 @@ export default function Users({posts}) {
             {
                 posts.map(obj => {
                     return(
-                        <h6>{obj.title}</h6>
+                        <h6 key={obj.id}>{obj.title}</h6>
                     )
                 })
             }

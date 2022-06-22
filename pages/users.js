@@ -6,7 +6,7 @@ export default function Users({users}) {
             {
                 users.map(obj => {
                     return(
-                        <h6>{obj.name}</h6>
+                        <h6 key={obj.id}>{obj.name}</h6>
                     )
                 })
             }
